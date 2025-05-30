@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: tests.PostTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.384 s <<< FAILURE! - in tests.PostTests
+createPost(tests.PostTests)  Time elapsed: 1.795 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <1000L> mıllıseconds, was 1287 milliseconds (1287 mıllıseconds).
+	at tests.PostTests.createPost(PostTests.java:34)
+

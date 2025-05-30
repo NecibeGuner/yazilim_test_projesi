@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: tests.GetTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.136 s <<< FAILURE! - in tests.GetTests
+getUserById(tests.GetTests)  Time elapsed: 1.54 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <1000L> mıllıseconds, was 1028 milliseconds (1028 mıllıseconds).
+	at tests.GetTests.getUserById(GetTests.java:27)
+
