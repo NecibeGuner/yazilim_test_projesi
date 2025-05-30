@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.necibe.tests.JsonPlaceholderApiTest" time="3.271" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.necibe.tests.JsonPlaceholderApiTest" time="5.026" tests="3" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="jpda.address" value="56522"/>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1254"/>
@@ -11,13 +10,12 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/Istanbul"/>
-    <property name="forkMode" value="once"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="user.country" value="TR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\Necibe\AppData\Local\Temp\surefire9296069626315905161\surefirebooter-20250530133929711_3.jar C:\Users\Necibe\AppData\Local\Temp\surefire9296069626315905161 2025-05-30T13-39-29_552-jvmRun1 surefire-20250530133929711_1tmp surefire_0-20250530133929711_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Necibe\AppData\Local\Temp\surefire14609921451841390337\surefirebooter-20250530144639364_3.jar C:\Users\Necibe\AppData\Local\Temp\surefire14609921451841390337 2025-05-30T14-46-39_160-jvmRun1 surefire-20250530144639364_1tmp surefire_0-20250530144639364_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.necibe.tests.JsonPlaceholderApiTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Necibe\yazilim_test_projesi\target\test-classes;C:\Users\Necibe\yazilim_test_projesi\target\classes;C:\Users\Necibe\.m2\repository\io\rest-assured\rest-assured\5.3.1\rest-assured-5.3.1.jar;C:\Users\Necibe\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Necibe\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Necibe\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Necibe\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Necibe\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Necibe\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Necibe\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Necibe\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Necibe\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Necibe\.m2\repository\io\rest-assured\xml-path\5.3.1\xml-path-5.3.1.jar;C:\Users\Necibe\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Necibe\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Necibe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Necibe\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\Necibe\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Necibe\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;"/>
@@ -33,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Necibe\AppData\Local\Temp\surefire9296069626315905161\surefirebooter-20250530133929711_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Necibe\AppData\Local\Temp\surefire14609921451841390337\surefirebooter-20250530144639364_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -44,7 +42,6 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="jpda.listen" value="true"/>
     <property name="maven.ext.class.path" value="C:\Users\Necibe\.vscode\extensions\oracle.oracle-java-24.0.0\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\Necibe\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -62,9 +59,8 @@
     <property name="java.vm.version" value="19.0.2+7-44"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
-    <property name="maven.surefire.debug" value="-agentlib:jdwp=transport=dt_socket,server=n,address=56522"/>
   </properties>
-  <testcase name="testGetPosts" classname="com.necibe.tests.JsonPlaceholderApiTest" time="2.08">
+  <testcase name="testGetPostById" classname="com.necibe.tests.JsonPlaceholderApiTest" time="2.265">
     <system-out><![CDATA[Request method:	GET
 Request URI:	https://jsonplaceholder.typicode.com/posts/1
 Proxy:			<none>
@@ -77,7 +73,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 30 May 2025 10:39:31 GMT
+Date: Fri, 30 May 2025 11:46:41 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 292
 Connection: keep-alive
@@ -97,9 +93,9 @@ Expires: -1
 X-Content-Type-Options: nosniff
 Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
 Via: 1.1 vegur
-Age: 27257
+Age: 2486
 Cf-Cache-Status: HIT
-CF-RAY: 947d9baf292e5b08-IST
+CF-RAY: 947dfe127df188e2-IST
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -108,17 +104,80 @@ alt-svc: h3=":443"; ma=86400
     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
 }
-✅ GET /posts/1 response time: 780 ms
+✅ GET /posts/1 response time: 917 ms
 ]]></system-out>
   </testcase>
-  <testcase name="testCreatePost" classname="com.necibe.tests.JsonPlaceholderApiTest" time="0.741">
+  <testcase name="testUpdatePostById" classname="com.necibe.tests.JsonPlaceholderApiTest" time="1.627">
+    <failure message="❗ Update isteği 1 saniyeden uzun sürdü! Süre: 1514 ms" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ❗ Update isteği 1 saniyeden uzun sürdü! Süre: 1514 ms
+	at com.necibe.tests.JsonPlaceholderApiTest.testUpdatePostById(JsonPlaceholderApiTest.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 30 May 2025 11:46:43 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 98
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Etag: W/"62-yL0hoA0F6nYE8JU5CWXo3fq7k7M"
+Expires: -1
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bL1sJXbiANFxJwNmxUVOEWPcGvfKZDyj%2BkJovSxThCE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1748605603"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bL1sJXbiANFxJwNmxUVOEWPcGvfKZDyj%2BkJovSxThCE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1748605603"
+Server: cloudflare
+Vary: Origin, Accept-Encoding
+Via: 2.0 heroku-router
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 995
+X-Ratelimit-Reset: 1748605636
+Cf-Cache-Status: DYNAMIC
+CF-RAY: 947dfe1e0ab2e332-IST
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Guncellenmis Baslik",
+    "body": "Bu icerik guncellendi.",
+    "userId": 1
+}
+✅ PUT /posts/1 response time: 1514 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatePost" classname="com.necibe.tests.JsonPlaceholderApiTest" time="0.649">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Fri, 30 May 2025 10:39:33 GMT
+Date: Fri, 30 May 2025 11:46:44 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 104
 Connection: keep-alive
-Server: cloudflare
-Cf-Ray: 947d9bb58be67214-IST
 Access-Control-Allow-Credentials: true
 Access-Control-Expose-Headers: Location
 Cache-Control: no-cache
@@ -127,18 +186,19 @@ Expires: -1
 Location: https://jsonplaceholder.typicode.com/posts/101
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=zUZa8hmfzk0kpVP7WdmuAql7YHHtkPDInfEpbvJUcdY%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1748601573"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=zUZa8hmfzk0kpVP7WdmuAql7YHHtkPDInfEpbvJUcdY%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1748601573"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=z%2F8p%2BHxaSF5zyUl%2BteNRk64t3ATK1J20hu3g4IA5CIE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1748605604"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=z%2F8p%2BHxaSF5zyUl%2BteNRk64t3ATK1J20hu3g4IA5CIE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1748605604"
+Server: cloudflare
 Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 Via: 2.0 heroku-router
 X-Content-Type-Options: nosniff
 X-Powered-By: Express
 X-Ratelimit-Limit: 1000
-X-Ratelimit-Remaining: 998
-X-Ratelimit-Reset: 1748601579
+X-Ratelimit-Remaining: 994
+X-Ratelimit-Reset: 1748605636
 Cf-Cache-Status: DYNAMIC
+CF-RAY: 947dfe21b8d3f49e-IST
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=63980&min_rtt=63764&rtt_var=24344&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3110&recv_bytes=968&delivery_rate=66507&cwnd=252&unsent_bytes=0&cid=e7f0c2a0d1998e46&ts=559&x=0"
 
 {
     "title": "REST Assured testi",
@@ -146,7 +206,7 @@ server-timing: cfL4;desc="?proto=TCP&rtt=63980&min_rtt=63764&rtt_var=24344&sent=
     "userId": 10,
     "id": 101
 }
-✅ POST /posts response time: 690 ms
+✅ POST /posts response time: 553 ms
 ]]></system-out>
   </testcase>
 </testsuite>
