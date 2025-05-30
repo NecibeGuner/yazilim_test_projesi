@@ -12,27 +12,26 @@ public class JsonPlaceholderApiTest {
 
     @BeforeClass
     public static void setup() {
-        // Tüm testler başlamadan önce base URI ayarlanıyor.
+        // testler başlamadan önce base URI ayarlar
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
     }
 
     @Test
     public void testGetPostById() {
-        // GET isteği ile /posts/1 endpoint'ine istek atılıyor.
+        // GET isteği ile /posts/1 endpoint'ine istek atıyor
         long responseTime = given()
-                .log().all()                       // İstek detaylarını (URL, header, body) konsola yaz
+                .log().all()                       
             .when()
-                .get("/posts/1")                   // İsteği gönder
+                .get("/posts/1")                   
             .then()
-                .log().all()                       // Gelen cevabın tüm detaylarını konsola yaz
+                .log().all()                   
                 .statusCode(200)                   // HTTP 200 OK bekle
-                .body("userId", equalTo(1))        // JSON içindeki userId alanını kontrol et
-                .body("id", equalTo(1))            // JSON içindeki id alanını kontrol et
+                .body("userId", equalTo(1))        // JSON içindeki userId alanını kontrol eder
+                .body("id", equalTo(1))            // JSON içindeki id alanını kontrol eder
                 .body("title", notNullValue())     // title alanı boş olmamalı
                 .body("body", notNullValue())      // body alanı boş olmamalı
-                .extract().time();                 // Yanıt süresini ölç ve döndür
+                .extract().time();                 // yanıt süresini ölçer 
 
-        // Yanıt süresinin 1 saniyeden kısa olması gerektiğini doğrula
         System.out.println("✅ GET /posts/1 response time: " + responseTime + " ms");
         assert responseTime < 1000 
             : "❗ GET isteği 1 saniyeden uzun sürdü! Süre: " + responseTime + " ms";
@@ -49,20 +48,20 @@ public class JsonPlaceholderApiTest {
         }
         """;
 
-        // POST isteği ile /posts endpoint'ine veri gönder
+        // POST isteği ile /posts endpoint ine veri gönderir
         long responseTime = given()
-                .header("Content-Type", "application/json; charset=UTF-8")  // İstek içeriğinin JSON olduğunu belirt
-                .body(requestBody)                                          // Gövdeye JSON veriyi ekle
+                .header("Content-Type", "application/json; charset=UTF-8")  // İstek içeriğinin JSON olduğunu belirtir
+                .body(requestBody)                                          
             .when()
-                .post("/posts")                                             // İsteği gönder
+                .post("/posts")                                             
             .then()
-                .log().all()                                                // Gelen cevabı konsola yaz
+                .log().all()                                                
                 .statusCode(201)                                            // HTTP 201 Created bekle
                 .body("title", equalTo("REST Assured testi"))               // Dönen title'ı kontrol et
                 .body("body", equalTo("Bu bir test gonderisidir."))         // Dönen body'i kontrol et
                 .body("userId", equalTo(10))                                // Dönen userId'yi kontrol et
                 .body("id", notNullValue())                                 // API bir id döndürmeli
-                .extract().time();                                          // Yanıt süresini ölç
+                .extract().time();                                          // yanıt süresini ölçwr
 
         System.out.println("✅ POST /posts response time: " + responseTime + " ms");
         assert responseTime < 1000 
@@ -81,7 +80,7 @@ public class JsonPlaceholderApiTest {
         }
         """;
 
-        // PUT isteği ile /posts/1 endpoint'ine güncelleme talebi gönder
+        // PUT isteği ile /posts/1 endpoint'ine güncelleme talebi gönderir
         long responseTime = given()
                 .header("Content-Type", "application/json; charset=UTF-8")  // İçerik tipini JSON olarak ayarla
                 .body(updateBody)                                          // Güncelleme verisini ekle
