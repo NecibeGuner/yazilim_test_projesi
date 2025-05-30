@@ -42,7 +42,7 @@ public class JsonPlaceholderApiTest {
         // Yeni gönderi için JSON gövdesi
         String requestBody = """
         {
-            "title": "REST Assured testi",
+            "title": "<<REST Assured testi>>",
             "body": "Bu bir test gonderisidir.",
             "userId": 10
         }
@@ -57,7 +57,7 @@ public class JsonPlaceholderApiTest {
             .then()
                 .log().all()                                                
                 .statusCode(201)                                            // HTTP 201 Created bekle
-                .body("title", equalTo("REST Assured testi"))               // Dönen title'ı kontrol et
+                .body("title", equalTo("<<REST Assured testi>>"))               // Dönen title'ı kontrol et
                 .body("body", equalTo("Bu bir test gonderisidir."))         // Dönen body'i kontrol et
                 .body("userId", equalTo(10))                                // Dönen userId'yi kontrol et
                 .body("id", notNullValue())                                 // API bir id döndürmeli
@@ -74,13 +74,13 @@ public class JsonPlaceholderApiTest {
         String updateBody = """
         {
             "id": 1,
-            "title": "Guncellenmis Baslik",
+            "title": "<<Guncellenmis Baslik>>",
             "body": "Bu icerik guncellendi.",
             "userId": 1
         }
         """;
 
-        // PUT isteği ile /posts/1 endpoint'ine güncelleme talebi gönderir
+        // PUT isteği ile /posts/1 endpoint ine güncelleme talebi gönderir
         long responseTime = given()
                 .header("Content-Type", "application/json; charset=UTF-8")  // İçerik tipini JSON olarak ayarla
                 .body(updateBody)                                          // Güncelleme verisini ekle
@@ -90,7 +90,7 @@ public class JsonPlaceholderApiTest {
                 .log().all()                                               // Cevabı konsola yaz
                 .statusCode(200)                                           // HTTP 200 OK bekle
                 .body("id", equalTo(1))                                    // id değişmemiş olmalı
-                .body("title", equalTo("Guncellenmis Baslik"))             // title güncellendi mi?
+                .body("title", equalTo("<<Guncellenmis Baslik>>"))             // title güncellendi mi?
                 .body("body", equalTo("Bu icerik guncellendi."))          // body güncellendi mi?
                 .body("userId", equalTo(1))                                // userId sabit kalmalı
                 .extract().time();                                         // Yanıt süresini ölç
